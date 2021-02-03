@@ -1,7 +1,6 @@
 *{
     font-family: 'Yusei Magic', sans-serif;
     font-size: 28px;
-    padding-left: 40px;
 }
 body{
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/confetti.jpg);
@@ -10,7 +9,34 @@ body{
     background-position: center;
     
 }
-
+.rw-wrapper{
+    width: 80%;
+    position: relative;
+    margin: 110px auto 0 auto;
+    height: 400px;
+}
+.rw-sentence{
+    margin:0;
+    text-align: left;
+}
+.rw-sentence span{
+    white-space: nowrap;
+}
+.rw-words{
+    display: inline;
+    text-indent: 10px;
+}
+.rw-words-1 span{
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    transform-origin: 10% 75%;
+    animation: rotateWord 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2){
+    animation-delay: 6s;
+    color: #6b739d;
+}
 .letters{
     overflow: hidden;
     height: 100vh;
@@ -21,7 +47,17 @@ body{
     top:-25vh;
     animation: fallIn 10s ease-in-out, rotation 3s linear;
 }
-
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	19% { opacity: 1; -webkit-transform: rotate(98deg); transform: rotate(98deg); }
+	21% { opacity: 1; -webkit-transform: rotate(86deg); transform: rotate(86deg); }
+	23% { opacity: 1; -webkit-transform: translateY(85px) rotate(83deg); transform: translateY(85px) rotate(83deg); }
+	25% { opacity: 0; -webkit-transform: translateY(170px) rotate(80deg); transform: translateY(170px) rotate(80deg); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
 @keyframes fallIn{
     to { 
         top: 110vh;
