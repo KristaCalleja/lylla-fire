@@ -1,4 +1,5 @@
-window.addEventListener('load', function(){
+ const drop = document.getElementById("drop")
+ drop.addEventListener('click', function(){
     var lettersEl = document.querySelectorAll('.letters');
     for (var i=0; i<lettersEl.length; i++){
         var text = lettersEl[i].innerText;
@@ -8,7 +9,7 @@ window.addEventListener('load', function(){
             var spanEl = document.createElement('span');
 
             spanEl.classList.add('letter');
-            spanEl.style.left = (Math.random()*90)+'vw';
+            spanEl.style.right = (Math.random()*90);
             spanEl.style.animationDelay = i2+"s";
             spanEl.innerText = text[i2];
             lettersEl[i].appendChild(spanEl);

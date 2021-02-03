@@ -2,18 +2,19 @@
     font-family: 'Yusei Magic', sans-serif;
     font-size: 28px;
 }
+html{
+    scroll-behavior: smooth;
+  }
 body{
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/confetti.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 .rw-wrapper{
-    width: 80%;
+    max-width: 80%;
     position: relative;
     margin: 110px auto 0 auto;
-    height: 400px;
 }
 .rw-sentence{
     margin:0;
@@ -28,14 +29,26 @@ body{
 }
 .rw-words-1 span{
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     overflow: hidden;
     transform-origin: 10% 75%;
-    animation: rotateWord 18s linear infinite 0s;
+    animation: rotateWord 18s linear infinite 10s;
 }
-.rw-words span:nth-child(2){
-    animation-delay: 6s;
-    color: #6b739d;
+.stanza{
+    padding-left: 40px;
+}
+a{
+    text-decoration: none;
+}
+a p{
+    color: #3f59c8;
+    font-size: 16px;
+}
+.fa-chevron-down{
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    margin-left: 150px;
+    color: #3f59c8;
 }
 .letters{
     overflow: hidden;
@@ -45,7 +58,7 @@ body{
 .letters > .letter{
     position:absolute;
     top:-25vh;
-    animation: fallIn 10s ease-in-out, rotation 3s linear;
+    animation: fallIn 5s ease-in-out, rotation 3s linear;
 }
 @keyframes rotateWord {
     0% { opacity: 0; }
@@ -58,12 +71,49 @@ body{
 	80% { opacity: 0; }
     100% { opacity: 0; }
 }
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateX(0);
+  }
+	40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+	60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+	40% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+	60% {
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
 @keyframes fallIn{
     to { 
-        top: 110vh;
+        top: 200vh;
     }
-}
-@keyframes rotation{
-    from { transform: rotate(0deg);}
-    to { transform: rotate(0deg);}
 }
