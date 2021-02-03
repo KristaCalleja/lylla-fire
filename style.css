@@ -1,0 +1,23 @@
+*{
+    font-family: 'Yusei Magic', sans-serif;
+}
+.letters{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.letters > .letter{
+    position:absolute;
+    top:-25vh;
+    animation: fallIn 10s ease-in-out, rotation 3s linear;
+}
+
+@keyframes fallIn{
+    to { 
+        top: 110vh;
+    }
+}
+@keyframes rotation{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(0deg);}
+}
