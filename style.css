@@ -41,7 +41,7 @@ html{
     padding-left: 120px;
 }
 .parent{
-    border: 1px black solid;
+    /* border: 1px black solid; */
     margin: 0px -50px;
     display: flex;
     justify-content: space-evenly;
@@ -49,7 +49,7 @@ html{
     padding: 0px 0;
 }
 .left{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     
 }
 .indented{
@@ -66,7 +66,7 @@ html{
     width: 60px;
 }
 .right{
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     position: relative;
 }
 a{
