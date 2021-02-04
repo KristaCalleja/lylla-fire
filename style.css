@@ -97,6 +97,14 @@ a p{
     top:-25vh;
     animation: fallIn 5s ease-in-out, rotation 3s linear;
 }
+
+.footer{
+    float: right;
+}
+.footer p{
+    font-size: 12px;
+    
+}
 @keyframes rotateWord {
     0% { opacity: 0; }
     5% { opacity: 1; }
