@@ -45,18 +45,18 @@ body{
 .parent{
     display: flex;
     justify-content: space-between;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     max-width: 350px;
 }
 .left{
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 .child{
-    border: 1px green solid;
+    /* border: 1px green solid; */
     width: 60px;
 }
 .right{
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     position: relative;
 }
 .transition{
