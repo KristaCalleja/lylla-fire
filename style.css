@@ -4,17 +4,16 @@
 }
 html{
     scroll-behavior: smooth;
-  }
-body{
+    max-width: 900px;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(images/confetti.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
+    background-size: fit;
+    background-position: center;
 }
 .rw-wrapper{
+    margin: 110px auto 0;
     max-width: 80%;
     position: relative;
-    margin: 110px auto 0 auto;
 }
 .rw-sentence{
     margin:0;
@@ -37,30 +36,43 @@ body{
 	transform-origin: 10% 75%;
 	-webkit-animation: rotateWord 18s linear infinite 0s;
 	-ms-animation: rotateWord 18s linear infinite 0s;
-	animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 8s linear infinite 0s;
 }
 .stanza{
-    padding-left: 40px;
+    /* border: 1px red solid; */
+    padding-left: 90px;
 }
 .parent{
+    margin: 0px -50px;
     display: flex;
     justify-content: space-between;
     /* border: 1px black solid; */
     max-width: 350px;
+    padding: 0px 0;
 }
 .left{
     /* border: 1px red solid; */
+}
+.indented{
+    margin: 50px;
+    text-align: right;
+}
+.special{
+    /* border: 1px hotpink solid; */
+    margin: -20px;
+    width: 130px;
 }
 .child{
     /* border: 1px green solid; */
     width: 60px;
 }
+.ease{
+    margin: 3px;
+    animation: rotateWord 8s linear infinite 0s;
+}
 .right{
     /* border: 1px blue solid; */
     position: relative;
-}
-.transition{
-
 }
 a{
     text-decoration: none;
