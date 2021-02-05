@@ -30,9 +30,10 @@ html{
     position: absolute;
     opacity: 1;
     overflow: hidden;
+    transform: translateY(0%);
     transition: transform 1s cubic-bezier(0.7, 0.04, 0.66, 1.71);
-    animation: dropWord 4s cubic-bezier(0.7, 0.04, 0.66, 1.71) infinite;
-    transform: translateY(100%);
+    animation: dropWord 4s cubic-bezier(0.7, 0.04, 0.66, 1.71) forwards;
+
 }
 .stanza{
     /* border: 1px red solid; */
@@ -57,7 +58,7 @@ html{
 }
 .special{
     /* border: 1px hotpink solid; */
-    margin: -40px;
+    margin: -25px;
     width: 130px;
 }
 .child{
@@ -97,29 +98,12 @@ a p{
 }
 .footer p{
     font-size: 12px;
-    
+
 }
 @keyframes dropWord {
-    0% { opacity: 1; }
-    5% { opacity: 1; }
-    17% { opacity: 1; 
-        -webkit-transform: translateY(0deg); 
-        transform: translateY(0deg) }
-    19% { opacity: 1; 
-        -webkit-transform: translateY(0deg); 
-        transform: translateY(0deg); }
-    21% { opacity: 1; 
-        -webkit-transform: translateY(0deg); 
-        transform: translateY(0deg); }
-    23% { opacity: 1; 
-        -webkit-transform: translateY(0deg); 
-        transform: translateY(0deg); }
-    25% { opacity: 1; 
-        -webkit-transform: translateY(0deg);
-         transform: translateY(5deg); }
-	80% { opacity: 1; }
-    100% { opacity: 1; 
+    100% { opacity: 1;
         transform: translateY(100%);
+        color: #e03042;
     }
 }
 /* @-ms-keyframes rotateWord {
@@ -175,7 +159,7 @@ a p{
   }
 }
 @keyframes fallIn{
-    to { 
+    to {
         top: 190vh;
     }
 }
