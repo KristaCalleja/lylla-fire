@@ -69,6 +69,12 @@ html{
     /* border: 1px blue solid; */
     position: relative;
 }
+button{
+    background-color: #F58F29;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 7px 25px;
+}
 /* Second screen */
 #drop{
     height: 100vh;
