@@ -79,60 +79,68 @@ button{
 #drop{
     height: 100vh;
 }
+.second-wrapper{
+    margin: 110px auto 0;
+    max-width: 80%;
+    position: relative;
+    height: 100vh;
+}
 ul{
     list-style-type: none;
     display: flex;
     letter-spacing: .9em;
 }
-ul li {
-    transform: translateY(350px);
-    animation: dropping-letters 20s ease-in-out;
+ul li{
+    transform: translateY(600px);
+    animation-name: top-to-bottom;
+    /* specifies a delay for the start of an animation */
+    animation-delay: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 .footer{
     float: right;
 }
 .footer p{
     font-size: 12px;
-
 }
 @keyframes dropWord {
     19% { opacity: 1;
         transform: rotate(98deg);}
-    100% { opacity: 1;
-        transform: translateY(100%);
-        color: #e03042;
+        100% { opacity: 1;
+            transform: translateY(100%);
+            color: #e03042;
+        }
     }
-}
-@-ms-keyframes dropWord {
-    19% { opacity: 1; 
-        -ms-transform: rotate(98deg); }
-    100% { opacity: 1;
-        -ms-transform: translateY(100%);
-        color: #e03042;
-     }
-}
-@keyframes dropping-letters{
-    0% {
-        transform: translateX(0);
-    }
-    33% {
-        transform: translateY(200px);
-    }
-    100% {
-        transform: translateY(350px);
-    }
-}
-ul li:nth-child(1){
-    animation-duration: 0;
-}
-ul li:nth-child(2){
-    animation-duration:19s
-}
-ul li:nth-child(3){
-    animation-duration:18s
-}
-ul li:nth-child(4){
-    animation-duration:17s
+    @-ms-keyframes dropWord {
+        19% { opacity: 1; 
+            -ms-transform: rotate(98deg); }
+            100% { opacity: 1;
+                -ms-transform: translateY(100%);
+                color: #e03042;
+            }
+        }
+        @keyframes top-to-bottom{
+            0% {
+                transform: translateY(0);
+            }
+            /* when complete */
+            100% {
+                transform: translateY(600px);
+            }
+        }
+        /* how long time an animation should take to complete. */
+        ul li:nth-child(1){
+            animation-duration: 20s;
+        }
+        ul li:nth-child(2){
+            animation-duration:19s
+        }
+        ul li:nth-child(3){
+            animation-duration:18s
+        }
+        ul li:nth-child(4){
+            animation-duration:17s
 }
 ul li:nth-child(5){
     animation-duration:16s
@@ -161,25 +169,3 @@ ul li:nth-child(12){
 ul li:nth-child(13){
     animation-duration:8s
 }
-    /* @keyframes falling{
-    0% { transform: translateY(-250px); }
-  
-    9% { transform: translateY(50px); }
-  
-  
-    27% { transform: translateY(50px); }
-  
-    45% { transform: translateY(50px); }
-  
-    63% { transform: translateY(50px); }
-  
-    81% { transform: translateY(50px); }
-  
-    90% { transform: translateY(15px); }
-    100% {transform: translateY(50px);}
-} */
-/* @keyframes fallIn{
-    to {
-        top: 190vh;
-    }
-} */
