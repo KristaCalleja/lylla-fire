@@ -33,7 +33,7 @@ html{
     transform: translateY(0%);
     transition: transform 1s cubic-bezier(0.7, 0.04, 0.66, 1.71);
     animation: dropWord 4s cubic-bezier(0.7, 0.04, 0.66, 1.71) forwards;
-    animation-delay: 8ss;
+    animation-delay: 8s;
 
 }
 .stanza{
@@ -103,7 +103,7 @@ ul li{
     letter-spacing: .1em;
     font-size: 18px;
     animation-timing-function: cubic-bezier(0.7, 0.04, 0.66, 1.71);
-    animation-iteration-count: unset;
+    animation-iteration-count: infinite;
 }
 .footer{
     float: right;
@@ -129,7 +129,7 @@ ul li{
 }
 @keyframes top-to-bottom{
     0% {
-        transform: translateY(0);}
+        transform: translateY(0px);}
             /* when complete */
     100% {
         transform: translateY(600px);}
@@ -177,20 +177,20 @@ ul li:nth-child(13){
 }
 /* o~aalq */
 ul li:nth-child(14){
-    animation-duration:3s
+    animation-duration:8s
 }
 ul li:nth-child(15){
-    animation-duration:3s
+    animation-duration:8s
 }
 ul li:nth-child(16){
-    animation-duration:3s
+    animation-duration:8s
 }
 ul li:nth-child(17){
-    animation-duration:3s
+    animation-duration:8s
 }
 ul li:nth-child(18){
-    animation-duration:3s
+    animation-duration:8s
 }
 ul li:nth-child(19){
-    animation-duration:3s
+    animation-duration:8s
 }
