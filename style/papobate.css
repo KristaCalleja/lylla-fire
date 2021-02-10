@@ -1,0 +1,196 @@
+*{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 28px;
+}
+html{
+    scroll-behavior: smooth;
+    max-width: 900px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(/images/confetti.jpg);
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center;
+}
+.rw-wrapper{
+    margin: 110px auto 0;
+    max-width: 80%;
+    position: relative;
+}
+.rw-sentence{
+    margin:0;
+    text-align: left;
+}
+.rw-sentence span{
+    white-space: nowrap;
+}
+.rw-words{
+    display: inline;
+    text-indent: 10px;
+}
+.rw-words-1 span{
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+    transform: translateY(0%);
+    transition: transform 1s cubic-bezier(0.7, 0.04, 0.66, 1.71);
+    animation: dropWord 4s cubic-bezier(0.7, 0.04, 0.66, 1.71) forwards;
+    animation-delay: 8s;
+
+}
+.stanza{
+    /* border: 1px red solid; */
+    padding-left: 120px;
+}
+.parent{
+    /* border: 1px black solid; */
+    margin: 0px -50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 370px;
+    padding: 0px 0;
+}
+.left{
+    /* border: 1px red solid; */
+    padding-left: 35px;
+}
+.indented{
+    /* margin: 70px; */
+    text-align: right;
+    padding-right: -2px;
+}
+.special{
+    /* border: 1px hotpink solid; */
+    display: inline-block;
+    margin: -25px;
+}
+.child{
+    /* border: 1px green solid; */
+    width: 60px;
+}
+.right{
+    /* border: 1px blue solid; */
+    position: relative;
+}
+button{
+    background-color: #F58F29;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 7px 25px;
+}
+/* Second screen */
+#drop{
+    height: 100vh;
+}
+.second-wrapper{
+    margin: 110px auto 0;
+    max-width: 80%;
+    position: relative;
+    height: 100vh;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    letter-spacing: .9em;
+}
+ul li{
+    transform: translateY(600px);
+    animation-name: top-to-bottom;
+    /* specifies a delay for the start of an animation */
+    animation-delay: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.small{
+    letter-spacing: .1em;
+    font-size: 18px;
+    animation-timing-function: cubic-bezier(0.7, 0.04, 0.66, 1.71);
+    animation-iteration-count: infinite;
+}
+.footer{
+    float: right;
+}
+.footer p{
+    font-size: 12px;
+}
+@keyframes dropWord {
+    19% { opacity: 1;
+        transform: rotate(98deg);}
+    100% { opacity: 1;
+        transform: translateY(100%);
+        color: #e03042;
+    }
+}
+@-ms-keyframes dropWord {
+    19% { opacity: 1; 
+        -ms-transform: rotate(98deg); }
+    100% { opacity: 1;
+        -ms-transform: translateY(100%);
+        color: #e03042;
+    }
+}
+@keyframes top-to-bottom{
+    0% {
+        transform: translateY(0px);}
+            /* when complete */
+    100% {
+        transform: translateY(600px);}
+}
+
+/* how long time an animation should take to complete. */
+ul li:nth-child(1){
+    animation-duration: 20s;
+}
+ul li:nth-child(2){
+    animation-duration:19s
+}
+ul li:nth-child(3){
+    animation-duration:18s
+}
+ul li:nth-child(4){
+    animation-duration:17s
+}
+ul li:nth-child(5){
+    animation-duration:16s
+}
+ul li:nth-child(6){
+    animation-duration:15s
+}
+ul li:nth-child(7){
+    animation-duration:14s
+}
+ul li:nth-child(8){
+    animation-duration:13s
+}
+ul li:nth-child(9){
+    animation-duration:12s
+}
+ul li:nth-child(10){
+    animation-duration:11s
+}
+ul li:nth-child(11){
+    animation-duration:10s
+}
+ul li:nth-child(12){
+    animation-duration:9s
+}
+ul li:nth-child(13){
+    animation-duration:8s
+}
+/* o~aalq */
+ul li:nth-child(14){
+    animation-duration:8s
+}
+ul li:nth-child(15){
+    animation-duration:8s
+}
+ul li:nth-child(16){
+    animation-duration:8s
+}
+ul li:nth-child(17){
+    animation-duration:8s
+}
+ul li:nth-child(18){
+    animation-duration:8s
+}
+ul li:nth-child(19){
+    animation-duration:8s
+}
