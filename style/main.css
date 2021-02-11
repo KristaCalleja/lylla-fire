@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(./images/bg.webp);
+    background-image: url(../../images/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,7 +51,7 @@ nav ul li a{
     grid-template-columns: 1fr 1fr;
 }
 .card-category{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/playthings.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../images/playthings.webp);
     background-size: cover;
     background-position: center;
     height: 180px;

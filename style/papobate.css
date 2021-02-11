@@ -5,7 +5,7 @@
 html{
     scroll-behavior: smooth;
     max-width: 900px;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/confetti.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../../images/confetti.jpg);
     background-repeat: no-repeat;
     background-size: fit;
     background-position: center;
