@@ -9,10 +9,6 @@
 html{
     scroll-behavior: smooth;
     background: linear-gradient(#91afba, #c7d1d6);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-body{
 }
 nav{
     height: 120px;
