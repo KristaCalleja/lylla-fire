@@ -201,6 +201,9 @@ ul li:nth-child(19){
         font-size: 18px;
     }
     .rw-wrapper{
-        margin: 100px 0;
+        margin: 20px 0;
+    }
+    .stanza{
+        padding-left: 70px;
     }
 }
