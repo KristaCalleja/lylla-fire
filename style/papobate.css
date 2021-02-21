@@ -1,6 +1,9 @@
-html{
+body{
     font-size: 28px;
     font-family: 'Yusei Magic', sans-serif;
+}
+
+html{
     scroll-behavior: smooth;
     max-width: 900px;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/confetti.jpg);
@@ -193,8 +196,11 @@ ul li:nth-child(19){
     animation-duration:8s
 }
 
-@media (min-width 100px) and (max-width 768px){
-    .rw-wrapper{
+@media (min-width: 100px) and (max-width: 768px){
+    body{
         font-size: 18px;
+    }
+    .rw-wrapper{
+        margin: 100px 0;
     }
 }
