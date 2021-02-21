@@ -1,8 +1,6 @@
-*{
-    font-family: 'Yusei Magic', sans-serif;
-    font-size: 28px;
-}
 html{
+    font-size: 28px;
+    font-family: 'Yusei Magic', sans-serif;
     scroll-behavior: smooth;
     max-width: 900px;
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/confetti.jpg);
@@ -11,7 +9,7 @@ html{
     background-position: center;
 }
 .rw-wrapper{
-    margin: 110px auto 0;
+    margin: 100px auto 0;
     max-width: 80%;
     position: relative;
 }
@@ -193,4 +191,10 @@ ul li:nth-child(18){
 }
 ul li:nth-child(19){
     animation-duration:8s
+}
+
+@media (min-width 100px) and (max-width 768px){
+    .rw-wrapper{
+        font-size: 18px;
+    }
 }
