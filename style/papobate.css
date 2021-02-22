@@ -213,6 +213,7 @@ ul li:nth-child(19){
         margin-left: -157px;
     }
     .rw-words-1 span{
-        text-indent: -40px;
+        position: relative;
+        text-indent: -80px;
     }
 }
