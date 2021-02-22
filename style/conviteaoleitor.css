@@ -1,0 +1,11 @@
+body{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 20px;
+    background: url(../images/ivan-gromov.jpg);
+    background-position: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    line-height: 1.8em;
+}
+p{
+    margin: auto 60px;
+}
