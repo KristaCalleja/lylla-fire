@@ -206,4 +206,14 @@ ul li:nth-child(19){
     .stanza{
         padding-left: 70px;
     }
+    .indented{
+        margin: -21px;
+    }
+    .right{
+        margin-left: -157px;
+    }
+    .rw-words-1 span{
+        position: absolute;
+        text-indent: -40px;
+    }
 }
