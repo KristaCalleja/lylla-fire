@@ -106,3 +106,10 @@ p{
     0% { transform: rotate(45deg);}
 	100% { transform: rotate(359deg)}
 }
+
+@media (min-width: 100px) and (max-width: 575px){
+    
+    p{
+        font-size: 12px;
+    }
+}
