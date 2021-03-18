@@ -1,0 +1,12 @@
+body{
+    margin: 80px 120px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/print.jpg);
+    background-size: cover;
+    color: #efefef;
+    font-weight: 600;
+}
+p{
+    font-size: 22px;
+    letter-spacing: .2em;
+}
