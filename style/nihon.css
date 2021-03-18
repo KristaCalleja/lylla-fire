@@ -1,103 +1,166 @@
 body {
-    font-size: 32px;
-    margin: 1em;
-    background: #efefef;
+  font-size: 28px;
+  margin: 1em;
+  background: #efefef;
+  font-family:Consolas, monaco, monospace;
+  color: #d51e25;
 }
-
 ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 #watch{
-    font-size: 1em;
-    position: relative;
+  font-size: 1em;
+  position: relative;
+}
+/* Shape the circles */
+#watch .large-face{
+  position: absolute;
+  width: 60em;
+  height: 60em;
+  margin: 1em auto;
+  border-radius: 15em;
+}
+#watch .lg-face{
+  position: absolute;
+  width: 60em;
+  height: 60em;
+  margin: 1em auto;
+  border-radius: 15em;
+}
+#watch .sm-face{
+  position: absolute;
+  width: 60em;
+  height: 60em;
+  margin: 1em auto;
+  border-radius: 15em;
 }
 
-#watch .frame-face{
-    position: relative;
-    width: 30em;
-    height: 30em;
-    margin: 2em auto;
-    border-radius: 15em;
-
+/* Concatenate the circles */
+#watch .large-face::before{
+  border: 3px solid black;
+  content: '';
+  width: 49.4em;
+  height: 49.4em;
+  border-radius: 24.7em;
+  position: absolute;
+  top: 120px;
+  left: 60px;
 }
-#watch .frame-face:before{
-    border: 1px solid black;
-    content: '';
-    width: 29.4em;
-    height: 29.4em;
-    border-radius: 14.7em;
-    position: absolute;
-    top: .3em;
-    left: .3em;
+#watch .lg-face::before{
+  border: 2px solid blue;
+  content: '';
+  width: 33.4em;
+  height: 33.4em;
+  border-radius: 24.7em;
+  position: absolute;
+  top: 351px;
+  left: 312px;
+}
+#watch .sm-face::before{
+  border: 1px solid black;
+  content: '';
+  width: 23.4em;
+  height: 23.4em;
+  border-radius: 14.7em;
+  position: absolute;
+  top: 486px;
+  left: 467px;
 }
 
-
+#watch .large-marks li{
+  color: black !important;
+  display:block;
+  width: .8em;
+  position: absolute;
+  top:80%; left:80%;
+  margin:-.6em 0 0 -.2em;
+}
+/* Select the width of the lg clock words */
+#watch .lg-marks li{
+  color: blue !important;
+  display:block;
+  width:.8em;
+  position:absolute;
+  top:60%; left:60%;
+  margin:-.5em 0 0 -.1em;
+}
+/* Select the width of the small clock words */
 #watch .minute-marks li {
-    font-family:Consolas, monaco, monospace;
-    color: #d51e25;
-    display:block;
-    width:.2em;
-    position:absolute;
-    top:50%; left:50%;
-    margin:-.4em 0 0 -.1em;
-  }
-  #watch .minute-marks li:first-child {transform:rotate(2deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(2) {transform:rotate(47deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(3) {transform:rotate(92deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(4) {transform:rotate(137deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(5) {transform:rotate(182deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(6) {transform:rotate(227deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(7) {transform:rotate(272deg) translateY(-12.7em)}
-  #watch .minute-marks li:nth-child(8) {transform:rotate(317deg) translateY(-12.7em)}
-  
-  @keyframes hours { to {transform:rotate(335deg)} }
-  #watch .hours-hand {
-    width:.8em;
-    height:7em;
-    border-radius:0 0 .9em .9em;
-    background:#232425;
-    position:absolute;
-    bottom:50%; left:50%;
-    margin:0 0 -.8em -.4em;
-    box-shadow:#232425 0 0 2px;
-    transform-origin:0.4em 6.2em;
-    transform:rotate(-25deg);
-    animation:hours 43200s linear 0s infinite;
-  }
-  #watch .hours-hand:before {
-    content:'';
-    background:inherit;
-    width:1.8em;
-    height:.8em;
-    border-radius:0 0 .8em .8em;
-    box-shadow:#232425 0 0 1px;
-    position:absolute;
-    top:-.7em; left:-.5em;
-  }
-  #watch .hours-hand:after {
-    content:'';
-    width:0; height:0;
-    border:.9em solid #232425;
-    border-width:0 .9em 2.4em .9em;
-    border-left-color:transparent;
-    border-right-color:transparent;
-    position:absolute;
-    top:-3.1em; left:-.5em;
-  }
-  @keyframes minutes { to {transform:rotate(422deg)} }
-  #watch .minutes-hand {
-    width:.8em;
-    height:12.5em;
-    border-radius:.5em;
-    background:#343536;
-    position:absolute;
-    bottom:50%; left:50%;
-    margin:0 0 -1.5em -.4em;
-    box-shadow:#343536 0 0 2px;
-    transform-origin:0.4em 11em;
-    transform:rotate(62deg);
-    animation:minutes 3600s linear 0s infinite;
-  }
+  display:block;
+  width: .9em;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-.4em 0 0 -.1em;
+}
+
+/* Put the small clock words in a circle */
+#watch .minute-marks li:first-child {transform:rotate(2deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(2) {transform:rotate(47deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(3) {transform:rotate(92deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(4) {transform:rotate(137deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(5) {transform:rotate(182deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(6) {transform:rotate(227deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(7) {transform:rotate(272deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(8) {transform:rotate(317deg) translateY(-12.7em)}
+
+/* Put the lg clock words in a circle */
+#watch .lg-marks li:first-child {transform:rotate(2deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(2) {transform:rotate(47deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(3) {transform:rotate(92deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(4) {transform:rotate(137deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(5) {transform:rotate(182deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(6) {transform:rotate(227deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(7) {transform:rotate(272deg) translateY(-12.7em)}
+#watch .lg-marks li:nth-child(8) {transform:rotate(317deg) translateY(-12.7em)}
+
+@keyframes hours { to {transform:rotate(-422deg)} }
+#watch .hours-hand {
+  width:.8em;
+  height:7em;
+  border-radius:.5em;
+  background:#d51e25;
+  position:absolute;
+  bottom:50%; left:50%;
+  margin:0 0 -.8em -.4em;
+  box-shadow:#d51e25 0 0 2px;
+  transform-origin:0.4em 6.2em;
+  transform:rotate(-62deg);
+  animation:minutes 100s linear 0s infinite;
+}
+
+#watch .hours-hand:before {
+  content:'';
+  background:inherit;
+  width:1.8em;
+  height:.8em;
+  border-radius:.5em;
+  box-shadow:#d51e25 0 0 1px;
+  position:absolute;
+  top:-.7em; left:-.5em;
+}
+#watch .hours-hand:after {
+  content:'';
+  width:0; height:0;
+  border:.9em solid #d51e25;
+  border-width:0 .9em 2.4em .9em;
+  border-left-color:transparent;
+  border-right-color:transparent;
+  position:absolute;
+  top:-3.1em; left:-.5em;
+}
+@keyframes minutes { to {transform:rotate(422deg)} }
+#watch .minutes-hand {
+  width:.8em;
+  height:12.5em;
+  border-radius:.5em;
+  background:#d51e25;
+  position:absolute;
+  bottom:50%; left:50%;
+  margin:0 0 -1.5em -.4em;
+  box-shadow:#d51e25 0 0 2px;
+  transform-origin:0.4em 11em;
+  transform:rotate(62deg);
+  animation:minutes 100s linear 0s infinite;
+}
