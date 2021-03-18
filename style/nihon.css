@@ -39,7 +39,7 @@ ul{
 
 /* Concatenate the circles */
 #watch .large-face::before{
-  border: 3px solid black;
+  /* border: 3px solid black; */
   content: '';
   width: 49.4em;
   height: 49.4em;
@@ -49,7 +49,7 @@ ul{
   left: 60px;
 }
 #watch .lg-face::before{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   content: '';
   width: 33.4em;
   height: 33.4em;
@@ -59,7 +59,7 @@ ul{
   left: 312px;
 }
 #watch .sm-face::before{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   content: '';
   width: 23.4em;
   height: 23.4em;
@@ -72,19 +72,18 @@ ul{
 #watch .large-marks li{
   color: black !important;
   display:block;
-  width: .8em;
+  width: 48.8em;
   position: absolute;
-  top:80%; left:80%;
-  margin:-.6em 0 0 -.2em;
+  top:70%; left:70%;
+  margin:-10.6em 0 0 -40.2em;
 }
 /* Select the width of the lg clock words */
 #watch .lg-marks li{
-  color: blue !important;
   display:block;
-  width:.8em;
+  width:24.8em;
   position:absolute;
   top:60%; left:60%;
-  margin:-.5em 0 0 -.1em;
+  margin:-8.5em 0 0 -20.1em;
 }
 /* Select the width of the small clock words */
 #watch .minute-marks li {
@@ -92,7 +91,7 @@ ul{
   width: .9em;
   position:absolute;
   top:50%; left:50%;
-  margin:-.4em 0 0 -.1em;
+  margin:-1.4em 0 0 -2.1em;
 }
 
 /* Put the small clock words in a circle */
@@ -106,14 +105,24 @@ ul{
 #watch .minute-marks li:nth-child(8) {transform:rotate(317deg) translateY(-12.7em)}
 
 /* Put the lg clock words in a circle */
-#watch .lg-marks li:first-child {transform:rotate(2deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(2) {transform:rotate(47deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(3) {transform:rotate(92deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(4) {transform:rotate(137deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(5) {transform:rotate(182deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(6) {transform:rotate(227deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(7) {transform:rotate(272deg) translateY(-12.7em)}
-#watch .lg-marks li:nth-child(8) {transform:rotate(317deg) translateY(-12.7em)}
+#watch .lg-marks li:first-child {transform:rotate(2deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(2) {transform:rotate(47deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(3) {transform:rotate(92deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(4) {transform:rotate(137deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(5) {transform:rotate(182deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(6) {transform:rotate(227deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(7) {transform:rotate(272deg) translateY(-14.7em) translateX(-.2em)}
+#watch .lg-marks li:nth-child(8) {transform:rotate(317deg) translateY(-14.7em) translateX(-.2em)}
+
+/* Put large clock words in a cricle */
+#watch .large-marks li:first-child {transform:rotate(2deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(2) {transform:rotate(47deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(3) {transform:rotate(92deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(4) {transform:rotate(137deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(5) {transform:rotate(182deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(6) {transform:rotate(227deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(7) {transform:rotate(272deg) translateY(-14.7em) translateX(-.2em)}
+#watch .large-marks li:nth-child(8) {transform:rotate(317deg) translateY(-14.7em) translateX(-.2em)}
 
 @keyframes hours { to {transform:rotate(-422deg)} }
 #watch .hours-hand {
