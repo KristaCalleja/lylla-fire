@@ -7,7 +7,7 @@
     font-family: 'Oxygen', sans-serif;
 }
 html{
-    background: linear-gradient(#91afba, #c7d1d6);
+    background: linear-gradient(#91afba, #CB958E);
 }
 nav{
     height: 120px;
@@ -27,7 +27,7 @@ nav img{
     /* border: 1px black solid; */
     margin: 10px;
     padding: 90px;
-    height: 100vh;
+    /* height: 100vh; */
     max-width: 1200px;
 }
 .cards {
