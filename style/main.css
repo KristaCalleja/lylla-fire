@@ -12,6 +12,7 @@ html{
 nav{
     height: 120px;
     font-size: 24px;
+    margin-bottom: 60px;
 }
 nav img{
     /* border: 1px black solid; */

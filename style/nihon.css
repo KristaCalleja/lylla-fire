@@ -1,6 +1,6 @@
 body {
   font-size: 28px;
-  margin: 1em;
+  margin: 0;
   background: #efefef;
   font-family:Consolas, monaco, monospace;
   color: #d51e25;
@@ -123,7 +123,7 @@ ul{
 #watch .large-marks li:nth-child(6) {transform:rotate(227deg) translateY(-14.7em) translateX(-.2em)}
 #watch .large-marks li:nth-child(7) {transform:rotate(272deg) translateY(-14.7em) translateX(-.2em)}
 #watch .large-marks li:nth-child(8) {transform:rotate(317deg) translateY(-14.7em) translateX(-.2em)}
-
+/* 
 @keyframes hours { to {transform:rotate(-422deg)} }
 #watch .hours-hand {
   width:.8em;
@@ -137,8 +137,8 @@ ul{
   transform-origin:0.4em 6.2em;
   transform:rotate(-62deg);
   animation:minutes 100s linear 0s infinite;
-}
-
+} */
+/* 
 #watch .hours-hand:before {
   content:'';
   background:inherit;
@@ -158,8 +158,8 @@ ul{
   border-right-color:transparent;
   position:absolute;
   top:-3.1em; left:-.5em;
-}
-@keyframes minutes { to {transform:rotate(422deg)} }
+} */
+/* @keyframes minutes { to {transform:rotate(422deg)} }
 #watch .minutes-hand {
   width:.8em;
   height:12.5em;
@@ -172,4 +172,4 @@ ul{
   transform-origin:0.4em 11em;
   transform:rotate(62deg);
   animation:minutes 100s linear 0s infinite;
-}
+} */
