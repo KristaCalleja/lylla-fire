@@ -31,8 +31,8 @@ nav > *{
 }
 .wrapper{
     background: linear-gradient(#91afba, #CB958E);
-    /* border: 1px black solid; */
     width: 100%;
+    height: 100vh;
 }
 
 .cards {
@@ -75,12 +75,11 @@ nav > *{
         padding: 5px;
     }
     .cards{
-        flex-basis: 140px;
         grid-template-columns: 1fr;
         justify-items: center;
     }
 }
-@media (min-width: 1330px) {
+@media (min-width: 900px) {
     .wrapper{ 
         padding: 40px;
     }
