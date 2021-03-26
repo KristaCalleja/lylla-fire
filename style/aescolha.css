@@ -42,7 +42,7 @@ p{
     overflow: hidden;
     position: absolute;
     opacity: 0;
-    animation: rotate-down 3s linear infinite;
+    animation: rotate-down 7s linear infinite;
     text-indent: 8px;
     font-size: 24px;
 }
@@ -78,10 +78,10 @@ p{
 }
 @keyframes rotate-down{
     0%{
-        opacity: 0;
+        opacity: 1;
     }
     5% {
-        opacity: 0; transform: translateY(-50px);
+        opacity: 1; transform: translateY(-50px);
     }
     10% {
         opacity: 1; transform: translateY(0px);
