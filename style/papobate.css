@@ -113,14 +113,30 @@ ul li{
     font-size: 12px;
 }
 @keyframes dropWord {
-    19% { opacity: 1;
-        transform: rotate(98deg);}
+    0%{
+        opacity: 1; }
+    5% {
+        opacity: 1; }
+    10% {
+        opacity: 1; }
+    30% {
+        opacity: 0; }
+    19% { opacity: 1; 
+        transform: rotate(98deg); }
     100% { opacity: 1;
         transform: translateY(100%);
         color: #e03042;
     }
 }
 @-ms-keyframes dropWord {
+    0%{
+        opacity: 1; }
+    5% {
+        opacity: 1; }
+    10% {
+        opacity: 1; }
+    30% {
+        opacity: 0; }
     19% { opacity: 1; 
         -ms-transform: rotate(98deg); }
     100% { opacity: 1;
