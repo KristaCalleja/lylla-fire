@@ -1,0 +1,24 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    justify-self: center;
+}
+.wrapper{
+    /* border: 1px red solid; */
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/allef-vinicius.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 350px 0;
+}
+.poem{
+    /* border: 1px blue solid; */
+    max-width: 526px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 2.8em;
+    font-size: 18px;
+    text-shadow: 11px 2px 2px rgba(0,0,225,0.86);
+}
