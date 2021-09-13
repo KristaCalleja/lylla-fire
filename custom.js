@@ -1,4 +1,4 @@
- const drop = document.getElementById("drop")
+const drop = document.getElementById("drop")
  drop.addEventListener('click', function(){
     var lettersEl = document.querySelectorAll('.letters');
     for (var i=0; i<lettersEl.length; i++){
@@ -17,3 +17,4 @@
     }
     }
 });
+
